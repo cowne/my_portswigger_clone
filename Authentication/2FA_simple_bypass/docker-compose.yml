@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  portswigger:
+    build: ./app
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./app/src:/var/www/html
+    

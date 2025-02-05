@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .hello-container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello-container">
+        <h1>Hello, <?php echo $_SESSION['username'];?></h1>
+        <p>Welcome to your new HTML page.</p>
+        <a href="/logout.php">Logout</a>
+    </div>
+</body>
+</html>
